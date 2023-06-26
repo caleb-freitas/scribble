@@ -1,16 +1,16 @@
-version: '3.9'
+version: "3.9"
 services:
-  postgres:
-    image: postgres:15
-    container_name: postgres
-    restart: always
-    ports:
-      - 5432:5432
-    env_file:
-      - .env
-    volumes:
-      - postgres:/var/lib/postgresql/data
+    postgres:
+        image: postgres:15
+        container_name: postgres
+        restart: always
+        ports:
+            - 5432:5432
+        env_file:
+            - .env
+        volumes:
+            - postgres:/var/lib/postgresql/data
 
 volumes:
-  postgres:
-    name: travel-db
+    postgres:
+        name: scribble
